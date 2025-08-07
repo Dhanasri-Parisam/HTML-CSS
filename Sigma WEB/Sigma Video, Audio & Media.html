@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video, Audio & Media In HTML</title>
+</head>
+<body>
+
+  <!-- 🖼️ 4. Images & Media
+          <img src="..." alt="...">	Embeds image
+          <figure>	Wraps image & caption
+          <figcaption>	Caption for image
+          <audio>	Adds audio
+          <video>	Adds video
+          <source>	Defines media file
+          <iframe>	Embeds external page or video -->
+
+  <!--video src with control
+      autoplay : for playing video automatically
+      loop : it is continuously playing video (don't stop)
+      muted : mute the audio for the video
+      poster : it is consisting the thumbnail for video 
+      width and height : these also accept in video tag adjust how ever you like-->
+
+  <video src="5_6336643780417948819.mp4"  width="500px" controls poster="Screenshot 2025-07-07 073227.png"></video>
+
+
+  <!-- audio src with control
+      autoplay : for playing audio automatically
+      loop : it is continuously playing audio (don't stop)
+      muted : mute the audio for the audio
+      preload : -->
+
+  <audio src="bahubali.mp3" controls preload="auto"></audio>
+
+  <!-- how to embedded SVG in HTML -->
+   <!-- <audio></audio><video></video><svg></svg>  --- (INLINE ELEMENTS) -->
+    <!-- 1.inline SVG: Directly writing server ways:
+    2.using an <img> tag:Point the src Attributes to an SVG file.
+    3.Using CSS: setting SVG as a background image in a CSS file. -->
+
+  <h2>SVG in HTML Example</h2>
+
+  <!-- SVG Area -->
+  <svg width="300" height="200" style="border:1px solid #ccc">
+    
+    <!-- Circle -->
+    <circle cx="50" cy="50" r="30" fill="orange" stroke="black" stroke-width="2" />
+
+    <!-- Rectangle -->
+    <rect x="100" y="30" width="80" height="40" fill="lightblue" stroke="black" stroke-width="2" />
+
+    <!-- Line -->
+    <line x1="10" y1="150" x2="200" y2="150" stroke="green" stroke-width="4" />
+
+    <!-- Text -->
+    <text x="20" y="190" font-size="16" fill="purple">This is SVG Text</text>
+
+  </svg>
+
+</body>
+</html>
+
+
+  <!-- iframe basically embedded video-->
+  <iframe src="https://www.youtube.com/watch?v=XZwBNDGuWGU&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w" width="440" height="440"></iframe>
+
+
+
+
+
+</body>
+</html>

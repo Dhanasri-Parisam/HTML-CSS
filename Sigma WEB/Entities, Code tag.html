@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entities, Code tag in HTML</title>
+</head>
+
+<body>
+  <!-- 1. HTML Entities
+        Purpose: Display reserved or special characters (like <, >, &) as text instead of being parsed by the browser.
+
+        Syntax: &lt;, &gt;, &amp;, &nbsp;, &copy;, etc -->
+
+  &lt;p&gt;Hello world&lt;/p&gt;
+
+
+  <!-- 2. <pre> Tag
+      Purpose: Preserves whitespace, line breaks, and formatting exactly as written
+
+      Usage: Often combined with HTML entities to show formatted code blocks: -->
+
+<pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  ...
+</pre>
+
+<!-- 3. <code> Tag
+      Purpose: Semantically marks inline code snippets. -->
+
+<pre><code>&lt;h1&gt;Hello&lt;/h1&gt;</code></pre>
+
+<!-- 4. Quotation Tags
+    <blockquote>: For longer, block-level quotes, with optional citation.
+
+    <q>: For inline quotes. Renders quotes automatically. -->
+
+  <blockquote cite="source.html">This is a long quote.</blockquote>
+  <p>He said, <q>Learning never stops.</q></p>
+
+  <footer>&copy; all copy rights are reserved.</footer>
+
+
+<!-- Feature	Tag(s)	Description
+  Special chars	Entities < etc.	Display HTML reserved characters
+  Preserved spaces	<pre>	Keeps formatting, spaces, line breaks
+  Inline code	<code>	Marks code snippets
+  Block quotes	<blockquote>	For longer quoted text
+  Inline quotes	<q>	Short quotes within paragraphs
+  Legacy styling	Obsolete tags	Avoid; use CSS instead
+  Graphics	<canvas>	Draw dynamic graphics via JavaScript -->
+</body>
+
+</html>

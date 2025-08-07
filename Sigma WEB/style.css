@@ -1,0 +1,38 @@
+/* #firstdiv {
+  background-color: aqua;
+  width: 200px;
+  height: 200px;
+}
+
+#seconddiv {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  /* display: flex;
+  justify-content: center;
+  text-align: center; 
+}
+
+#thirddiv {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(64, 255, 0);
+  /* display: flex; 
+}
+
+.text {
+  padding: 80px;
+  text-align: center;
+  justify-content: center;
+  /* margin: 50px auto; 
+  display: flex;
+} */
+
+#main-header {
+  text-align: center;
+  color: darkgreen;
+}
+
+.bold-text {
+  font-weight: bold;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAY-3 FORMS</title>
+</head>
+<body>
+  <h1>Form to apply for an internship</h1>
+  <form action="post">
+    <label for="username">Enter Your name : </label>
+    <input type="text" name="username" id="username" placeholder="Enter Your name" autofocus><br>
+    <label for="age">Enter Your Age : </label>
+    <input type="number" name="username" id="age" placeholder="Enter Your Age" required><br>
+
+    <div>
+      <input type="radio" id="female" name="gender" value="male">
+      <label for="male">male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">female</label><br>
+
+    </div>
+    
+    <div>
+      <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+      <label for="subscribe">Get Ready For Upcoming Notifications</label>
+    </div>
+
+    <div>
+      <label for="comment">Enter your opinion about this job:</label><br>
+      <textarea id="comment" name="comment" rows="20" cols="50" placeholder="write lessthen 50 words.."></textarea>
+    </div>
+
+    <div>
+      <label>Enter your country name:</label>
+      <select name="countries">
+        <option value="india">india</option>
+        <option value="japan">japan</option>
+        <option value="china">china</option>
+        <option value="america">america</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- 🧾 6. Form & Input
+      <form>	Form element
+      <input>	User input (text, checkbox, radio, etc.)
+      <textarea>	Multi-line input
+      <label>	Label for input
+      <button>	Clickable button
+      <select>	Dropdown
+      <option>	Option inside dropdown
+      <fieldset>	Groups form inputs
+      <legend>	Caption for fieldset -->
+
+      <!-- <form> — Main Form Container Wraps all form elements like inputs, buttons, etc.
+                    Attributes:
+
+                    action: Where to send data
+
+                    method: How to send data (GET or POST) -->
+
+        <form action="/submit" method="post">
+          <!-- form elements go here -->
+        </form>
+
+      <!-- <input> — Single-line Input Field
+          Used to collect user input. Types include:
+          text, password, checkbox, radio, email, number, etc. -->
+
+        <input type="text" name="username" placeholder="Enter your name">
+        <input type="radio" name="gender" value="male"> Male
+        <input type="checkbox" name="subscribe"> Subscribe to newsletter
+
+      <!-- <textarea> — Multi-line Text Input
+          Use this when you need longer user input like feedback or messages.-->
+
+          <textarea name="message" rows="5" cols="40">Type your message here...</textarea>
+
+      <!-- <label> — Label for Input
+          Used to define a clickable label for an input. Improves accessibility. -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+      <!-- <button> — Clickable Button Used to submit a form or trigger an action.-->
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="alert('Hello')">Click Me</button>
+
+      <!-- <select> — Dropdown Menu
+      Lets the user choose one (or more) options from a list. -->
+        <select name="city">
+          <option value="vizag">Visakhapatnam</option>
+          <option value="hyd">Hyderabad</option>
+        </select>
+
+      <!-- <option> — Option Inside <select>
+      Defines each item in the dropdown. -->
+
+        <option value="java">Java</option>
+
+      <!-- <fieldset> — Group Related Form Inputs
+      Used to group related inputs with a visual box. -->
+
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label>Name: <input type="text" name="name"></label>
+        </fieldset>
+
+
+      <!-- <legend> — Caption for <fieldset>
+      Provides a title or label for the grouped inputs inside a <fieldset>. -->
+    </div>
+
+  </form>
+</body>
+</html>

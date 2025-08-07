@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* 1. Font Family */
+.font-family {
+  font-family: 'Georgia', serif;
+}
+
+/* 2. Font Size */
+.font-size {
+  font-size: 24px;
+}
+
+/* 3. Font Weight */
+.font-weight {
+  font-weight: bold;
+}
+
+/* 4. Font Style */
+.font-style {
+  font-style: italic;
+}
+
+/* 5. Text Align */
+.text-align {
+  text-align: center;
+}
+
+/* 6. Text Decoration */
+.text-decoration {
+  text-decoration: underline;
+}
+
+/* 7. Text Transform */
+.text-transform {
+  text-transform: capitalize;
+}
+
+/* 8. Letter Spacing */
+.letter-spacing {
+  letter-spacing: 5px;
+}
+
+/* 9. Line Height */
+.line-height {
+  line-height: 2;
+}
+
+/* 10. Text Color */
+.text-color {
+  color: blue;
+}
+
+/* 11. Background Color */
+.bg-color {
+  background-color: lightgreen;
+  padding: 10px;
+}

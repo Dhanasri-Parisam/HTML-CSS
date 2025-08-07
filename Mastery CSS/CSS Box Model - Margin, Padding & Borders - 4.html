@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Box Model - Margin, Padding & Borders</title>
+  <link rel="stylesheet" href="boxmodel.css" />
+</head>
+
+<body>
+  <div>
+
+    <h1>CSS Box Model</h1>
+    <p>The CSS Box Model is a layout structure that includes the following areas: <strong>content</strong>,
+      <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong>.</p>
+
+    <h3>1. Content</h3>
+    <p>The actual content of the element (text, image, etc.). Its dimensions are set using:</p>
+    <p><code>width: 100px;</code><br><code>height: 100px;</code></p>
+
+    <h3>2. Padding</h3>
+    <p>Padding creates space <strong>inside</strong> the element, between the content and the border.</p>
+    <p><code>padding: 10px;</code> or <code>padding: 10px 20px 5px 15px;</code></p>
+
+    <h3>3. Border</h3>
+    <p>The border wraps around the padding and content. You can define it with:</p>
+    <p>
+      <code>border-width: 2px;</code><br>
+      <code>border-style: solid | dashed | dotted;</code><br>
+      <code>border-color: red;</code><br>
+      <code>border: 2px dashed magenta;</code> <em>(shorthand)</em>
+    </p>
+
+    <h3>4. Border Radius</h3>
+    <p>Used to round the corners of a box.</p>
+    <p><code>border-radius: 10px;</code> or <code>border-radius: 50%;</code> for a circle</p>
+
+    <h3>5. Margin</h3>
+    <p>Margin creates space <strong>outside</strong> the border, separating it from other elements.</p>
+    <p><code>margin: 10px;</code> or <code>margin: 5px 10px 15px 20px;</code></p>
+
+    <h1>Advanced Box Model Properties</h1>
+
+    <!-- ✅ BOX-SIZING -->
+    <h3>1. box-sizing</h3>
+    <p><code>box-sizing</code> controls whether padding/border are included in the width and height.</p>
+    <p><code>content-box</code> (default): width = content only<br>
+      <code>border-box</code>: width = content + padding + border
+    </p>
+
+    <div class="box-sizing-content">box-sizing: content-box</div>
+    <div class="box-sizing-border">box-sizing: border-box</div>
+
+    <!-- ✅ OUTLINE -->
+    <h3>2. outline</h3>
+    <p><code>outline</code> adds a line around an element like a border, but it does NOT affect layout or size.</p>
+    <div class="outline-example">This has an orange outline</div>
+
+    <!-- ✅ OVERFLOW -->
+    <h3>3. overflow</h3>
+    <p><code>overflow</code> controls what happens when content is too big for the box.</p>
+    <div class="overflow-box">This is a very long text inside a small box that will be hidden when it overflows.</div>
+
+    <!-- ✅ MAX-WIDTH / MIN-WIDTH / MIN-HEIGHT -->
+    <h3>4. max-width, min-width, min-height</h3>
+    <p>These properties control the resizing behavior of boxes.</p>
+
+    <div class="minmax-box">
+      Resize the window to see <code>max-width</code> and <code>min-height</code> in effect.
+    </div>
+
+    <h3>10. Text Align</h3>
+    <p>Aligns inline content like text inside a box.</p>
+    <p><code>text-align: center;</code></p>
+
+    <h3>11. Display</h3>
+    <p>Defines how the box behaves in layout: block, inline, flex, etc.</p>
+    <p><code>display: block;</code></p>
+
+    <h3>Box Example 1 – Rectangle with Margin & Padding</h3>
+    <div class="box1">I am box 1</div>
+
+    <h3>Box Example 2 – Circle with Border Radius</h3>
+    <div class="box2">I am box 2</div>
+  </div>
+
+</body>
+
+</html>

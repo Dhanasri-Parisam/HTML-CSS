@@ -1,0 +1,13 @@
+div{
+  height: 100px;
+  width: 100px;
+  background-color: lightpink;
+  background-image: url(anime-moon-landscape.jpg);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  
+
+
+}

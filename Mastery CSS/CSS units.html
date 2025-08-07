@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNITS IN CSS</title>
+  <link rel="stylesheet" href="units.css" />
+</head>
+<body>
+
+  <h1>CSS Units</h1>
+  <p>CSS supports both absolute and relative units for sizing elements, fonts, margins, padding, etc.</p>
+
+  <h2>1. Absolute Units</h2>
+  <p>These units are fixed and not affected by screen size:</p>
+  <ul>
+    <li><code>px</code> – Pixels (e.g., <code>16px</code>)</li>
+    <li><code>in</code> – Inches (1in = 96px)</li>
+    <li><code>cm</code> – Centimeters (1in = 2.54cm)</li>
+    <li><code>mm</code> – Millimeters</li>
+    <li><code>pt</code> – Points (1pt = 1/72 inch)</li>
+    <li><code>pc</code> – Picas (1pc = 12pt)</li>
+  </ul>
+
+  <h2>2. Relative Units</h2>
+  <p>These scale based on parent or screen size:</p>
+  <ul>
+    <li><code>%</code> – Percentage of parent element</li>
+    <li><code>em</code> – Relative to parent font size</li>
+    <li><code>rem</code> – Relative to root (html) font size</li>
+    <li><code>vw</code> – Relative to 1% of viewport width</li>
+    <li><code>vh</code> – Relative to 1% of viewport height</li>
+    <li><code>vmin</code> – Relative to smaller of viewport width or height</li>
+    <li><code>vmax</code> – Relative to larger of viewport width or height</li>
+    <li><code>ex</code> – Relative to x-height of current font</li>
+    <li><code>ch</code> – Relative to width of “0” (zero) character</li>
+  </ul>
+
+  <h1>CSS Units Explained</h1>
+
+  <div id="one">em unit – 2em</div>
+  <div id="two">rem unit – 150%</div>
+  <div id="three">vw/vh unit – 10vw / 10vh</div>
+  <div id="four">max-width / max-height</div>
+
+</body>
+</html>

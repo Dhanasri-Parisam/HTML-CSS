@@ -1,0 +1,35 @@
+div{
+  background-color: lightgreen;
+}
+.box1 {
+  background-color: aqua;
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  color: magenta;
+
+  /* padding: top right bottom left */
+  padding: 2px 3px 1px 1px;
+
+  /* margin: top right bottom left */
+  margin: 5px 5px 10px 10px;
+
+  box-sizing: border-box;
+  outline: 2px solid orange;
+  overflow: hidden;
+  max-width: 120px;
+  min-height: 80px;
+}
+
+.box2 {
+  border-width: 2px;
+  border-color: magenta;
+  border-style: dashed;
+  width: 96px;
+  height: 96px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+}

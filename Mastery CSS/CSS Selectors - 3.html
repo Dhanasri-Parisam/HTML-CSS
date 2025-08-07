@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors MasterClass</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 1. Universal Selector -->
+  <div>
+    <p>I am <q>universal selector</q> (Selects all elements on the page.)</p>
+  </div>
+
+  <!-- 2. Element Selector -->
+  <div>
+    <p>This is <q>element selector</q> (applies to tags like h1, p, div)</p>
+  </div>
+
+  <!-- 3. ID Selector -->
+  <div>
+    <p id="id-1">This is <q>ID selector</q> (IDs must be unique)</p>
+  </div>
+
+  <!-- 4. Class Selector -->
+  <div>
+    <p class="class-selector">This is <q>Class selector</q> (Targets all elements with a specific class)</p>
+  </div>
+
+  <!-- 5. Group Selector -->
+  <div>
+    <h1>Group Selector</h1>
+    <h2>applies same style</h2>
+    <h3>to multiple tags</h3>
+    <h4>like h1, h2, h3, h4</h4>
+  </div>
+
+  <!-- 6. Descendant Selector -->
+  <div>
+    <div>
+      <p>This paragraph is <q>inside a div</q> (Descendant selector)</p>
+    </div>
+  </div>
+
+  <!-- 7. Child Selector (>) -->
+  <div>
+    <ul>
+      <li>biryani</li>
+      <li>chicken 65</li>
+      <li>mutton</li>
+      <li>Target direct child only</li>
+    </ul>
+  </div>
+
+  <!-- 8. Adjacent Sibling Selector (+) -->
+  <div>
+    <h1>Adjacent One</h1>
+    <p>This paragraph is selected by the <q>adjacent sibling selector</q>.</p>
+    <p>This paragraph is NOT affected, because it's not immediately after h1.</p>
+  </div>
+
+  <!-- 9. Attribute Selector -->
+  <div>
+    <input type="text" style="width: 400px; height: 30px;" placeholder="Targets elements based on attributes.">
+  </div>
+
+  <!-- 10. Pseudo Classes -->
+  <div>
+    <div>This div is for <q>Pseudo-classes</q> (e.g., :hover, :first-child)</div>
+    <a href="http://www.google.com">Google</a>
+
+    <main class="one">
+      <p id="Pseudoclass-1">1st child</p>
+      <p>2nd child</p>
+    </main>
+  </div>
+
+</body>
+
+</html>

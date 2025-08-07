@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Specificity & Cascading</title>
+  <link rel="stylesheet" href="specifixity & cascade.css" />
+</head>
+<body>
+
+  <h1>CSS Specificity & Cascading</h1>
+  <p><strong>Specificity</strong> determines which CSS rule takes precedence when multiple rules target the same element.</p>
+  <p><strong>Cascading</strong> means the final style is determined by the source order and specificity level.</p>
+
+  <h3>Specificity Hierarchy:</h3>
+  <ul>
+    <li><code>Inline styles</code> (e.g., <code>style=""</code>) → Most specific</li>
+    <li><code>#id</code> selectors</li>
+    <li><code>.class</code>, <code>:pseudo-class</code>, <code>[attributes]</code></li>
+    <li><code>Element</code> and <code>pseudo-element</code> selectors → Least specific</li>
+  </ul>
+
+  <h3>1. Example Heading with Multiple Classes</h3>
+  <p>Which color applies?</p>
+  <h2 class="yellow red purple aqua">I am styled using class selectors</h2>
+
+  <h3>2. Inline Style Overrides All</h3>
+  <h2 style="color: black;">I use inline style (highest priority)</h2>
+
+  <h3>3. !important Overrides Everything</h3>
+  <h2 class="important-class">This uses <code>!important</code> in CSS</h2>
+
+  <h1>all about specificity</h1>
+  <h2 class="yellow red purple aqua">I am styled using class selectors</h2>
+  <p>All are class selectors → equal specificity
+
+    The last one defined in CSS (aqua) will apply due to source order
+
+    But if any used !important, it would override all others</p>
+
+
+</body>
+</html>

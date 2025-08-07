@@ -1,0 +1,180 @@
+/* ----------------------------------------
+   Common Box Styling - Used by all types
+---------------------------------------- */
+.box {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  background-color: lightblue;
+}
+
+/* ----------------------------------------
+   1. Block Element
+   - Takes full width available.
+   - Starts on a new line.
+---------------------------------------- */
+.block {
+  display: block;
+}
+
+/* ----------------------------------------
+   2. Inline Element
+   - Takes only as much width as its content.
+   - Does NOT allow width, height, margin-top/bottom.
+   - Sits inline with other content.
+---------------------------------------- */
+.inline {
+  display: inline;
+  background-color: lightcoral;
+}
+
+/* ----------------------------------------
+   3. Inline-Block Element
+   - Behaves like inline (flows with text).
+   - Allows width, height, margin & padding.
+---------------------------------------- */
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+}
+
+/* ----------------------------------------
+   4. Flex Container
+   - Used for 1D layout (row or column).
+   - Children become flex items.
+   - block level - flex
+   - inline level - inline flex
+
+    .flex-container {
+      display: flex; 
+    }
+
+  .item1, .item2, .item3 {
+    /* These are all flex items */
+---------------------------------------- */
+.flex-container {
+  display: flex;
+  background-color: lavender;
+  justify-content: space-around; /* Distributes items evenly */
+}
+
+/* Flex Items */
+.flex-item {
+  background-color: salmon;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* ----------------------------------------
+   5. Inline-Flex
+   - Works like flex but behaves inline.
+   - Container flows with inline elements.
+   - Layout inline elements, like buttons or labels inside text
+---------------------------------------- */
+.inline-flex {
+  display: inline-flex;
+  background-color: pink;
+  width: 200px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ----------------------------------------
+   6. Grid Container
+   - Used for 2D layout (rows and columns).
+   - Children become grid items.
+---------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 10px;
+  background-color: lightgoldenrodyellow;
+}
+
+/* Grid Items */
+.grid-item {
+  background-color: rgb(255, 114, 71);
+  text-align: center;
+  padding: 10px;
+}
+
+/* ----------------------------------------
+   7. Inline-Grid
+   - Works like grid but behaves inline.
+---------------------------------------- */
+.inline-grid {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  background-color: lightpink;
+  padding: 10px;
+}
+
+/* ----------------------------------------
+   8. None (Visibility)
+   - Hides the element visually, but takes up space.
+   - For complete removal, use `display: none`.
+---------------------------------------- */
+.none {
+  visibility: hidden;
+}
+
+/* ----------------------------------------
+   9. Contents
+   - The element itself is hidden but its children remain visible and in the layout.
+   - Good for layout flattening.
+---------------------------------------- */
+.contents {
+  display: contents;
+}
+
+/* Child elements of display: contents */
+.contents .inner {
+  background-color: yellow;
+  padding: 5px;
+  margin: 3px;
+  border: 1px dashed black;
+}
+
+/* ----------------------------------------
+   10. Table
+   - Makes element behave like <table>.
+---------------------------------------- */
+.table {
+  display: table;
+  border-collapse: collapse;
+  background-color: #f0f0f0;
+}
+
+/* ----------------------------------------
+   11. Table Row
+   - Makes element behave like <tr>.
+---------------------------------------- */
+.table-row {
+  display: table-row;
+}
+
+/* ----------------------------------------
+   12. Table Cell
+   - Makes element behave like <td>.
+---------------------------------------- */
+.table-cell {
+  display: table-cell;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/* ----------------------------------------
+   13. List Item
+   - Makes element behave like <li>.
+   - Adds bullet points if list-style is set.
+---------------------------------------- */
+.list-item {
+  display: list-item;
+  list-style-type: disc;
+  margin-left: 20px;
+}

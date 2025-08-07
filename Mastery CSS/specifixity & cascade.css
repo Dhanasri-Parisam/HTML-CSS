@@ -1,0 +1,31 @@
+/* Element selector */
+h2 {
+  color: green;
+}
+
+/* Class selectors */
+.yellow {
+  color: yellow;
+}
+.red {
+  color: red;
+}
+.purple {
+  color: purple;
+}
+.aqua {
+  color: aqua;
+}
+
+/* Inline style will override all above */
+
+/* Important rule */
+.important-class {
+  color: orange !important;
+}
+
+/* For better readability on yellow/aqua text */
+.yellow, .aqua {
+  background-color: black;
+  padding: 5px;
+}

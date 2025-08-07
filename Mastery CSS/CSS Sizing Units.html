@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Units Demo</title>
+  <link rel="stylesheet" href="Sizing units.css">
+</head>
+<body>
+
+  <!-- | Unit   | Meaning                             | Example              |
+| ------ | ----------------------------------- | -------------------- |
+| `px`   | Absolute pixels                     | Fixed sizes          |
+| `%`    | Relative to parent container        | Width/height         |
+| `em`   | Relative to parent’s font size      | 2em in 24px = 48px   |
+| `rem`  | Relative to root font size (`html`) | 2rem = 32px          |
+| `vh`   | % of viewport height                | 10vh = 10% of height |
+| `vw`   | % of viewport width                 | 100vw = full width   |
+| `vmin` | % of **smaller** of vw/vh           | 10vmin               |
+| `vmax` | % of **larger** of vw/vh            | 10vmax               |
+ -->
+
+  <div class="header">
+    Header using <strong>vh</strong>, <strong>vw</strong>, and <strong>rem</strong>
+  </div>
+
+  <div class="main-container">
+    <div class="em-text">
+      Font size with <strong>2em</strong> → relative to container (1.5rem = 24px, so 2em = 48px)
+    </div>
+
+    <div class="rem-text">
+      Font size with <strong>2rem</strong> → 2 × 16px (root) = 32px
+    </div>
+
+    <div class="percent-box">
+      This box uses <strong>%</strong> width and height (50% and 30% of parent)
+    </div>
+
+    <div class="px-box">
+      Fixed size box: <strong>300px × 100px</strong>
+    </div>
+
+    <div class="vmin-box">
+      Box sized with <strong>10vmin</strong> → 10% of the smaller side of the viewport
+    </div>
+
+    <div class="vmax-box">
+      Box sized with <strong>10vmax</strong> → 10% of the larger side of the viewport
+    </div>
+  </div>
+
+</body>
+</html>
